@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text style={{color: 'purple', fontSize: '20', fontWeight:'bold'}}>Hello World!</Text>
     </View>
   );
 }

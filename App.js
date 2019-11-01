@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={{color: 'purple', fontSize: '20', fontWeight:'bold'}}>Hello World!</Text>
-    </View>
-  );
+
+export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.box} />
+          <Text>Hello World!</Text>
+      </View>
+    )
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-});
+  box: {
+    width: 200,
+    height: 200,
+    backgroundColor: 'skyblue',
+    borderWidth: 2,
+    borderColor: 'steelblue',
+    borderRadius: 20,
+  },
+})

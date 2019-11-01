@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet } from 'react-native'
+import { Image, View, StyleSheet } from 'react-native'
 
 import Tog from './Tog'
 
@@ -20,6 +20,10 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
+        <Image
+         style={styles.image}
+         source={{uri: 'https://www.jonssonsofia.com/static/media/sofia-milo.fe008a5f.jpeg'}}
+       />
         <Tog
           label={'Primary axis (flexDirection)'}
           value={flexDirection}
@@ -61,4 +65,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'steelblue',
     margin: 5,
   },
+  image: {
+   width: 200,
+   height: 200,
+ },
 })
